@@ -1,3 +1,20 @@
+/*
+printing this was pain in the ass
+but okay it was fun; my logic might suck, but atleast im practical about it.
+
+
+5 5 5 5 5 5 5 5 5
+5 4 4 4 4 4 4 4 5
+5 4 3 3 3 3 3 4 5
+5 4 3 2 2 2 3 4 5
+5 4 3 2 1 2 3 4 5
+5 4 3 2 2 2 3 4 5
+5 4 3 3 3 3 3 4 5
+5 4 4 4 4 4 4 4 5
+5 5 5 5 5 5 5 5 5
+
+*/
+
 #include <iostream>
 using namespace std;
 
