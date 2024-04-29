@@ -1,6 +1,6 @@
 /*
 printing this was pain in the ass
-but okay it was fun; my logic might suck, but atleast im practical about it.
+but okay it was fun; my logic might suck, but atleast im transparent about it.
 
 
 5 5 5 5 5 5 5 5 5
