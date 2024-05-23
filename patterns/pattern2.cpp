@@ -16,3 +16,12 @@ int main() {
 
   return 0;
 }
+
+
+/*
+ABCDE
+BCDEF
+CDEFG
+DEFGH
+EFGHI
+*/
