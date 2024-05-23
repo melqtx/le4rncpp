@@ -60,3 +60,50 @@ int main() {
     std::cout << '\n';
   }
 }
+
+
+///__________________________________________________________
+
+
+#include <iostream>
+
+int main() {
+  int n;
+  std::cout << "enter n: ";
+  std::cin >> n;
+
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= i; j++) {
+      std::cout << j << " ";
+    }
+    for (int j = i; j < n; j++) {
+      std::cout << "  ";
+    }
+    for (int j = i; j < n; j++) {
+      std::cout << "  ";
+    }
+    for (int j = 1; j <= i; j++) {
+      std::cout << n - i + j << " ";
+    }
+
+    std::cout << '\n';
+  }
+
+  for (int i = 1; i < n; i++) {
+    for (int j = i; j < n; j++) {
+      std::cout << j + 1 << " ";
+    }
+    for (int j = 1; j <= i; j++) {
+      std::cout << "  ";
+    }
+    for (int j = 1; j <= i; j++) {
+      std::cout << "  ";
+    }
+    for (int j = i; j < n; j++) {
+      std::cout << n - i + j + 1 << " ";
+    }
+    std::cout << '\n';
+  }
+
+  return 0;
+}
