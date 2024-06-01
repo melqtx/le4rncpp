@@ -77,3 +77,50 @@ ugh nothing here, i was just testing how to write readme file.
 - [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg): Web development tutorials
 - [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw): Tutorials based on Web development from basic to advanced.
 - [Take You Forward](https://www.youtube.com/c/takeUforward): Tutorials on Data structures and Algorithms in Java and C++.
+
+
+
+##
+
+
+# Coding Cheat Sheet
+
+## Sorted Array
+- **Binary Search**
+- **Two Pointers**
+
+## Permutations/Subsets
+- **Backtracking**
+
+## Tree
+- **DFS (Depth-First Search)**
+- **BFS (Breadth-First Search)**
+
+## Graph
+- **DFS (Depth-First Search)**
+- **BFS (Breadth-First Search)**
+
+## Linked List
+- **Two Pointers**
+
+## No Recursion Allowed
+- **Stack**
+
+## In-Place Solutions
+- **Swap Values**
+- **Store Different Values in the Same Pointer**
+
+## Max/Min Subarray/Subset
+- **Dynamic Programming**
+
+## Top/Least K Items
+- **Heap**
+- **QuickSelect**
+
+## Common Strings
+- **Map**
+- **Trie**
+
+## Other Scenarios
+- **Map/Set** for O(1) time & O(n) space
+- **Sort** input for O(nlogn) time and O(1) space
