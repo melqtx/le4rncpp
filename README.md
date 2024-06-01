@@ -88,43 +88,16 @@ ugh nothing here, i was just testing how to write readme file.
 
 # Personal Notes 
 
-## Sorted Array
-- Binary search
-- Two pointers
-
-## Permutations/Subsets
-- Backtracking
-
-## Tree
-- DFS (Depth-First Search)
-- BFS (Breadth-First Search)
-
-## Graph
-- DFS (Depth-First Search)
-- BFS (Breadth-First Search)
-
-## Linked List
-- Two pointers
-
-## No Recursion Allowed
-- Stack
-
-## In-Place Solutions
-- Swap corresponding values
-- Store one or more different values in the same pointer
-
-## Max/Min Subarray/Subset
-- Dynamic programming
-
-## Top/Least K Items
-- Heap
-- QuickSelect
-
-## Common Strings
-- Map
-- Trie
-
-## Other Scenarios
-- Map/Set for O(1) time & O(n) space
-- Sort input for O(nlogn) time and O(1) space
-
+| Scenario                       | Solutions                           |
+|--------------------------------|-------------------------------------|
+| Sorted Array                   | Binary Search, Two Pointers         |
+| Permutations/Subsets           | Backtracking                        |
+| Tree                           | DFS (Depth-First Search), BFS       |
+| Graph                          | DFS, BFS                            |
+| Linked List                    | Two Pointers                        |
+| No Recursion Allowed           | Stack                               |
+| In-Place Solutions             | Swap corresponding values, Store different values in the same pointer |
+| Max/Min Subarray/Subset        | Dynamic Programming                 |
+| Top/Least K Items              | Heap, QuickSelect                    |
+| Common Strings                 | Map, Trie                           |
+| Other Scenarios                | Map/Set for O(1) time & O(n) space, Sort input for O(nlogn) time and O(1) space |
