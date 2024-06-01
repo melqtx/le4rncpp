@@ -83,44 +83,48 @@ ugh nothing here, i was just testing how to write readme file.
 ##
 
 
-# Coding Cheat Sheet
+
+
+
+# Personal Notes 
 
 ## Sorted Array
-- **Binary Search**
-- **Two Pointers**
+- Binary search
+- Two pointers
 
 ## Permutations/Subsets
-- **Backtracking**
+- Backtracking
 
 ## Tree
-- **DFS (Depth-First Search)**
-- **BFS (Breadth-First Search)**
+- DFS (Depth-First Search)
+- BFS (Breadth-First Search)
 
 ## Graph
-- **DFS (Depth-First Search)**
-- **BFS (Breadth-First Search)**
+- DFS (Depth-First Search)
+- BFS (Breadth-First Search)
 
 ## Linked List
-- **Two Pointers**
+- Two pointers
 
 ## No Recursion Allowed
-- **Stack**
+- Stack
 
 ## In-Place Solutions
-- **Swap Values**
-- **Store Different Values in the Same Pointer**
+- Swap corresponding values
+- Store one or more different values in the same pointer
 
 ## Max/Min Subarray/Subset
-- **Dynamic Programming**
+- Dynamic programming
 
 ## Top/Least K Items
-- **Heap**
-- **QuickSelect**
+- Heap
+- QuickSelect
 
 ## Common Strings
-- **Map**
-- **Trie**
+- Map
+- Trie
 
 ## Other Scenarios
-- **Map/Set** for O(1) time & O(n) space
-- **Sort** input for O(nlogn) time and O(1) space
+- Map/Set for O(1) time & O(n) space
+- Sort input for O(nlogn) time and O(1) space
+
