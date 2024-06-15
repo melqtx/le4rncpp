@@ -29,6 +29,37 @@ int Delete(Array *arr, int index) {
   }
   return 0;
 }
+
+int Min(Array arr) {
+  int min = arr.A[0];
+  for (int i = 0; i < arr.length; i++) {
+    if (arr.A[i] < min) {
+      min = arr.A[i];
+    }
+  }
+  return min;
+}
+
+int Max(Array arr) {
+  int max = arr.A[0];
+  for (int i = 0; i < arr.length; i++) {
+    if (arr.A[i] > max) {
+      max = arr.A[i];
+    }
+  }
+  return max;
+}
+
+int Sum(Array arr) {
+  int total = 0;
+  for (int i = 0; i < arr.length; i++) {
+    total = total + arr.A[i];
+  }
+  return total;
+}
+
+float Avg(Array arr) { return (float)Sum(arr) / arr.length; }
+
 void swap(int *x, int *y) {
   int temp;
   temp = *x;
@@ -96,13 +127,5 @@ int main() {
   //*Delete(&arr, 3);*//
   Display(&arr);
   cout << '\n';
-
-  cout << "========================================================"
-          "==========\n";
-  cout << "The element you searched for is at index: " << BSearch1(arr, 12)
-       << '\n';
-  cout << "========================================================"
-          "==========\n";
-
   return 0;
 }
