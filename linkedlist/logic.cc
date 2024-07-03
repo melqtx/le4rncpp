@@ -147,7 +147,7 @@ void insert(Node **p, int data) { // inserting at the first position
 }
 
 void insert2(int pos, int x) {
-  Node *t, *p;
+  Node *t, *p;  
 
   // Handle insertion at position 0
   if (pos == 0) {
