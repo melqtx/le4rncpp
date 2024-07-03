@@ -139,10 +139,49 @@ Node *RSearch(Node *p, int key) {
   return RSearch(p->next, key);
 }
 
+void insert(Node **p, int data) { // inserting at the first position
+  Node *t = new Node;
+  t->data = data;
+  t->next = *p;
+  *p = t;
+}
+
+void insert2(int pos, int x) {
+  Node *t, *p;
+
+  // Handle insertion at position 0
+  if (pos == 0) {
+    t = new Node;
+    t->data = x;
+    t->next = first;
+    first = t;
+    return;
+  }
+
+  // Traverse the list to the desired position
+  p = first;
+  int currentPos = 0;
+  while (p != nullptr && currentPos < pos - 1) {
+    p = p->next;
+    currentPos++;
+  }
+
+  // Check if the desired position is within the list bounds
+  if (p != nullptr && currentPos == pos - 1) {
+    t = new Node;
+    t->data = x;
+    t->next = p->next;
+    p->next = t;
+  } else {
+    // Handle invalid position
+    std::cout << "Error: Invalid position to insert." << std::endl;
+  }
+}
+
 void display(Node *p) {
   if (p != NULL) {
-    display(p->next);
     cout << p->data << " ";
+    display(p->next);
   }
 }
 
@@ -157,11 +196,16 @@ int main() {
   cout << "The sum is: " << add(first) << '\n';
   cout << "The max integer is: " << rmax2(first) << '\n';
   cout << "The min integer is: " << rmin(first) << '\n';
-  if (RSearch(first, 71))
+  /*if (RSearch(first, 71))
     cout << "KEY FOUND";
   else
-    cout << "KEY NOT found";
+    cout << "KEY NOT found"; */
+  // Insert a new node at the beginning
+  insert(&first, 100);
 
+  // Display the updated linked list
   display(first);
+  cout << endl;
+
   return 0;
 }
