@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 
 class Node {
@@ -8,6 +9,8 @@ public:
 };
 
 Node *first = nullptr;
+Node *second = nullptr;
+Node *third = nullptr;
 
 void create(int A[], int n) {
   int i;
@@ -16,6 +19,23 @@ void create(int A[], int n) {
   first->data = A[0];
   first->next = NULL;
   last = first;
+
+  for (i = 1; i < n; i++) {
+    Node *t = new Node;
+    t->data = A[i];
+    t->next = NULL;
+    last->next = t;
+    last = t;
+  }
+}
+
+void create2(int A[], int n) {
+  int i;
+  Node *t, *last;
+  second = new Node;
+  second->data = A[0];
+  second->next = NULL;
+  last = second;
 
   for (i = 1; i < n; i++) {
     Node *t = new Node;
@@ -139,42 +159,236 @@ Node *RSearch(Node *p, int key) {
   return RSearch(p->next, key);
 }
 
-void insert(Node **p, int data) { // inserting at the first position
+void Linsert(Node *p, int data) { // inserting at the last position
   Node *t = new Node;
+  Node *last = nullptr;
+
   t->data = data;
-  t->next = *p;
-  *p = t;
+  t->next = nullptr;
+  if (p == nullptr) {
+    p = last = t;
+  } else {
+    last->next = t;
+    last = t;
+  }
 }
 
-void insert2(int pos, int x) {
-  Node *t, *p;  
+void SortedInsert(Node *p, int x) {
+  Node *t = new Node;
+  Node *q = nullptr;
 
-  // Handle insertion at position 0
-  if (pos == 0) {
-    t = new Node;
-    t->data = x;
+  t->data = x;
+  t->next = nullptr;
+
+  if (first == nullptr) {
+    first = t;
+  } else {
+    while (p && p->data < x) {
+      q = p;
+      p = p->next;
+    }
+    if (p == first) {
+      t->next = first;
+      first = t;
+    } else {
+      t->next = q->next;
+      q->next = t;
+    }
+  }
+}
+
+void Insert(Node *p, int index, int x) {
+  Node *t;
+  if (index < 0 || index > cnt(p)) {
+    return;
+  }
+  t = new Node;
+  t->data = x;
+
+  if (index == 0) {
     t->next = first;
     first = t;
+
+  } else {
+    for (int i = 0; i < index - 1; i++) {
+      p = p->next;
+    }
+    t->next = p->next;
+    p->next = t;
+  }
+}
+
+/*void del(Node *p) {
+  //node *p = first
+  first = first->next;
+  int x = p->data;
+  delete p;
+}*/
+
+int autodel(Node *p, int index) {
+  Node *q;
+  int x = -1;
+  if (index < 1 || index > cnt(p)) {
+    return x;
+  }
+
+  if (index == 1) {
+    q = first;
+    x = first->data;
+    first = first->next;
+    delete q;
+    return x;
+  } else {
+    for (int i = 0; i < index - 1; i++) {
+      q = p;
+      p = p->next;
+    }
+    q = p->next;
+    x = q->data;
+    p->next = q->next;
+    delete q;
+    return x;
+  }
+}
+/*int reverse(Node *p) {
+  Node *temp = p;
+  stack<int> st;
+
+  while (temp != nullptr) {
+    st.push(temp->data);
+    temp = temp->next;
+  }
+
+  temp = p;
+  while (temp != nullptr) {
+    temp->data = st.top();
+    st.pop();
+    temp = temp->next;
+  }
+  return true;
+} */
+
+void Reverse1(Node *p) {
+  int *A, i = 0;
+  Node *q = p;
+  int size = cnt(p);
+  A = new int[size];
+
+  // Store the values of the linked list in the array A
+  while (q != nullptr) {
+    A[i++] = q->data;
+    q = q->next;
+  }
+
+  q = p;
+  i = size - 1;
+  // Assign the values from the array A back to the linked list in reverse order
+  while (q != nullptr) {
+    q->data = A[i--];
+    q = q->next;
+  }
+}
+
+void Reverse2(Node *p) {
+  Node *q = nullptr, *r = nullptr;
+  while (p != nullptr) {
+    r = q;
+    q = p;
+    p = p->next;
+    q->next = r;
+  }
+  first = q;
+}
+
+void Reverse3(Node *p, Node *q) {
+  if (p != nullptr) {
+    Reverse3(p->next, p);
+    p->next = q;
+  } else {
+    first = q;
+  }
+}
+
+bool issort(Node *p) {
+  int x = INT_MIN;
+
+  while (p != nullptr) {
+    if (p->data < x) {
+      return false;
+    }
+    x = p->data;
+    p = p->next;
+  }
+  return true;
+}
+
+void findubs(Node *p) {
+  Node *q = first->next;
+  while (q != nullptr) {
+    if (p->data != q->data) {
+      p = q;
+      q = q->next;
+    } else {
+      p->next = q->next;
+      delete q;
+      q = p->next;
+    }
+  }
+}
+
+void findubs2(Node *p) {
+  while (p != nullptr && p->next != nullptr) {
+    if (p->data != p->next->data) {
+      p = p->next;
+    } else {
+      Node *temp = p->next;
+      p->next = p->next->next;
+      delete temp;
+    }
+  }
+}
+
+void concat(Node *p, Node *q) {
+  third = p;
+  if (p == nullptr) {
     return;
   }
 
-  // Traverse the list to the desired position
-  p = first;
-  int currentPos = 0;
-  while (p != nullptr && currentPos < pos - 1) {
+  while (p->next != nullptr) {
     p = p->next;
-    currentPos++;
+  }
+  p->next = q;
+}
+
+void merge(Node *p, Node *q) {
+  Node *last;
+  if (p->data < q->data) {
+    third = last = p;
+    p = p->next;
+    third->next = nullptr;
+  } else {
+    third = last = q;
+    q = q->next;
+    third->next = nullptr;
   }
 
-  // Check if the desired position is within the list bounds
-  if (p != nullptr && currentPos == pos - 1) {
-    t = new Node;
-    t->data = x;
-    t->next = p->next;
-    p->next = t;
+  while (p && q) {
+    if (p->data < q->data) {
+      last->next = p;
+      last = p;
+      p = p->next;
+      last->next = nullptr;
+    } else {
+      last->next = q;
+      last = q;
+      q = q->next;
+      last->next = nullptr;
+    }
+  }
+  if (p != nullptr) {
+    last->next = p;
   } else {
-    // Handle invalid position
-    std::cout << "Error: Invalid position to insert." << std::endl;
+    last->next = q;
   }
 }
 
@@ -186,26 +400,18 @@ void display(Node *p) {
 }
 
 int main() {
-  int A[] = {67, 2,  89, 3,  59, 5,  73, 7,  83, 11, 13, 17, 19,
-             23, 29, 31, 37, 41, 43, 47, 53, 61, 71, 79, 96};
+  int A[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+  int B[] = {5, 15, 25, 35, 45, 55, 65, 75, 85, 95};
+  int k = sizeof(B) / sizeof(B[0]);
   int n = sizeof(A) / sizeof(A[0]);
-  create(A, n);
-  display(first);
-  cout << '\n';
-  cout << "The length is: " << rcnt(first) << '\n';
-  cout << "The sum is: " << add(first) << '\n';
-  cout << "The max integer is: " << rmax2(first) << '\n';
-  cout << "The min integer is: " << rmin(first) << '\n';
-  /*if (RSearch(first, 71))
-    cout << "KEY FOUND";
-  else
-    cout << "KEY NOT found"; */
-  // Insert a new node at the beginning
-  insert(&first, 100);
 
-  // Display the updated linked list
-  display(first);
-  cout << endl;
+  create(A, n);
+  create2(B, k);
+
+  merge(first, second);
+  display(third);
+
+  // autodel(first, 0);
 
   return 0;
 }
