@@ -359,7 +359,7 @@ void concat(Node *p, Node *q) {
   }
   p->next = q;
 }
-
+// learn again [];
 void merge(Node *p, Node *q) {
   Node *last;
   if (p->data < q->data) {
@@ -399,17 +399,38 @@ void display(Node *p) {
   }
 }
 
+int isLoop(Node *f) {
+  Node *p, *q;
+  p = q = f;
+
+  do {
+    p = p->next;
+    q = q->next;
+    q = q ? q->next : q;
+  } while (p && q && p != q);
+  if (p == q)
+    return 1;
+  else
+    return 0;
+}
+
 int main() {
-  int A[] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-  int B[] = {5, 15, 25, 35, 45, 55, 65, 75, 85, 95};
-  int k = sizeof(B) / sizeof(B[0]);
+  int A[] = {10, 20, 30, 40, 50, 60};
+  // int B[] = {5, 15, 25, 35, 45, 55, 65, 75, 85, 95};
+  // int k = sizeof(B) / sizeof(B[0]);
   int n = sizeof(A) / sizeof(A[0]);
 
   create(A, n);
-  create2(B, k);
 
-  merge(first, second);
-  display(third);
+  Node *t1, *t2;
+  t1 = first->next->next->next;
+  t2 = first->next->next->next->next->next;
+  // t2->next = t1;
+
+  if (isLoop(first))
+    cout << " it is a loop";
+  else
+    cout << "not a loop bitch";
 
   // autodel(first, 0);
 
