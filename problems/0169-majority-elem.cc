@@ -33,7 +33,7 @@ public:
       }
     }
     return -1;
-  }
+  }  
 };
 
 // wake up babe, we got moore's voting algorithm,
