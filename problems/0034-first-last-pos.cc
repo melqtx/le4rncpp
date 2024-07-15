@@ -1,3 +1,9 @@
+/*look the most simplified approach could have been was using upper and lower
+bount, the answer we need to return is just {lower bound, upperbound -1}, so
+there will be one edge case edge case= if lb == x and arr[lb] != x; where we
+will be returning {-1,-1}.
+*/
+
 class Solution {
 public:
   vector<int> searchRange(vector<int> &nums, int target) {
