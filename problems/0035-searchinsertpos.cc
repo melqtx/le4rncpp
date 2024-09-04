@@ -1,4 +1,5 @@
 //just do a simple binary search, instead of returning -1, return low.
+//its a lower bound ass hole.:wq
 
 class Solution {
 public:
