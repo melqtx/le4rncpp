@@ -38,3 +38,7 @@ public:
     return ans;
   }
 };
+
+
+//we couldve directly used the lb and up function, 
+//here but it wouldve consudmed more memory.
