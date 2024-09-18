@@ -65,3 +65,34 @@ public:
 // we want to include the case where l == r, and we know that this terminates, as both cases ignore the curr_k for the next iteration
 // we know we need an (n)logk alg as k can be between 10^9 and we want to find the optimal k in that range
 // for each k, we test to check the h value associated
+//
+
+
+class Solution {
+public:
+    long long int hourlyrate(const vector<int>&piles, int hourly ){
+        long long int totalht = 0;
+        for(int pile: piles){ 
+            totalht += ceil(static_cast<double>(pile)/hourly);
+            }
+        return totalht;
+    }
+       
+    int minEatingSpeed(vector<int>& piles, int h) {
+         ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+        int low = 1;
+        int high = *max_element(begin(piles), end(piles));
+        while(low <= high){
+            int mid = low + (high - low) / 2;
+            long long int totalh = hourlyrate(piles, mid);
+            if(totalh <= h) {
+                high = mid -1;
+            }else{
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
+};
+
+// this one works and id say runs.
