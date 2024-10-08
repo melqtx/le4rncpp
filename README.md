@@ -75,5 +75,76 @@ ugh nothing here, i was just testing how to write readme file.
 - [xdadevelopers](https://www.youtube.com/channel/UCk1SpWNzOs4MYmr0uICEntg) : You have found the world-famous XDA-Developers.com YouTube Channel, known as XDA TV. We cover Android and Windows Mobile from HTC, Samsung, Motorola, Sony, and more. Learn about rooting your Android, how to build applications, and more.
 - [KudVenkat](https://www.youtube.com/user/kudvenkat/) : Microsoft .NET technologies and SQL Server tutorials.
 - [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg): Web development tutorials
-- [Web Dev Simplified](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw): Tutorials based on Web development from basic to advanced.
-- [Take You Forward](https://www.youtube.com/c/takeUforward): Tutorials on Data structures and Algorithms in Java and C++.
+
+
+Here's a structured list of LeetCode problems suitable for beginners, complete with hyperlinks to each problem. This format allows you to click on the problem title to access it directly on the LeetCode platform.
+
+| Problem                                                                 | Category                     |
+|-------------------------------------------------------------------------|------------------------------|
+| [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Arrays and Strings           |
+| [Rings and Rods](https://leetcode.com/problems/rings-and-rods/)       | Arrays and Strings           |
+| [Binary Search](https://leetcode.com/problems/binary-search/)         | Binary Search                |
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked Lists                 |
+| [Same Tree](https://leetcode.com/problems/same-tree/)                 | Trees                        |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Graphs                       |
+| [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)   | Dynamic Programming          |
+| [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy                       |
+| [Subsets](https://leetcode.com/problems/subsets/)                     | Backtracking                 |
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack and Queue              |
+| [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) | Heap (Priority Queue)        |
+| [Single Number](https://leetcode.com/problems/single-number/)         | Bit Manipulation             |
+| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Math                         |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | Design                       |
+| [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | Arrays and Strings           |
+| [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) | Two Pointers                 |
+| [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) | Sliding Window               |
+| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Binary Search                |
+| [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | Linked Lists                 |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Trees                        |
+| [All Paths from Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Graphs                       |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)     | Dynamic Programming          |
+| [Jump Game](https://leetcode.com/problems/jump-game/)                 | Greedy                       |
+| [Permutations](https://leetcode.com/problems/permutations/)           | Backtracking                 |
+| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Stack and Queue              |
+| [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Heap (Priority Queue)        |
+| [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)  | Bit Manipulation             |
+| [Power of Two](https://leetcode.com/problems/power-of-two/)           | Math                         |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/)                 | Design                       |
+| [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Arrays and Strings           |
+| [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | Two Pointers                 |
+| [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | Sliding Window               |
+| [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | Binary Search                |
+| [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | Linked Lists                 |
+| [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Trees                        |
+| [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) | Graphs                       |
+| [House Robber](https://leetcode.com/problems/house-robber/)           | Dynamic Programming          |
+| [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Greedy                       |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/)     | Backtracking                 |
+| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Stack and Queue              |
+| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Heap (Priority Queue)        |
+| [Counting Bits](https://leetcode.com/problems/counting-bits/)         | Bit Manipulation             |
+| [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | Math                         |
+| [Design Twitter](https://leetcode.com/problems/design-twitter/)       | Design                       |
+| [Maximum Number of Pairs in Array](https://leetcode.com/problems/maximum-number-of-pairs-in-array/) | Arrays and Strings           |
+| [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | Two Pointers                 |
+| [Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | Sliding Window               |
+| [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search                |
+| [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | Linked Lists                 |
+| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)       | Trees                        |
+| [Parallel Courses](https://leetcode.com/problems/parallel-courses/)   | Graphs                       |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Dynamic Programming          |
+| [Task Scheduler](https://leetcode.com/problems/task-scheduler/)       | Greedy                       |
+| [N-Queens](https://leetcode.com/problems/n-queens/)                   | Backtracking                 |
+| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)  | Stack and Queue              |
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | Heap (Priority Queue)        |
+| [Reverse Bits](https://leetcode.com/problems/reverse-bits/)           | Bit Manipulation             |
+| [Happy Number](https://leetcode.com/problems/happy-number/)           | Math                         |
+| [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | Design                       |
+| [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/)  | Arrays and Strings           |
+| [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)  | Two Pointers                 |
+| [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/)  | Sliding Window               |
+| [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)  | Binary Search                |
+| [Sort Linked List Already Sorted Using Absolute Values](https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/)  | Linked Lists                 |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)  | Trees                        |
+| [Checking Existence of Edge Length Limited Paths]( https://leetcode.com/proble... )  Graphs                       |
+
