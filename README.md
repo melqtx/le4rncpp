@@ -77,90 +77,113 @@ ugh nothing here, i was just testing how to write readme file.
 - [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg): Web development tutorials
 
 
-Certainly! Below is the table formatted in Markdown, which you can copy into a `.md` file. This table includes hyperlinks to each LeetCode problem and serial numbers for easy reference.
 
+| #   | Problem Name                                                                 | Type                | Pattern                        |
+|-----|------------------------------------------------------------------------------|---------------------|--------------------------------|
+| 1   | [Two Sum](https://leetcode.com/problems/two-sum)                             | Array               | Hash Table                     |
+| 2   | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers)             | Linked List         | Math                           |
+| 3   | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | String | Sliding Window |
+| 4   | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Array | Binary Search |
+| 5   | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | String | Dynamic Programming |
+| 6   | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion)         | String              | Simulation                     |
+| 7   | [Reverse Integer](https://leetcode.com/problems/reverse-integer)             | Math                | Math                           |
+| 8   | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | String | Simulation |
+| 9   | [Palindrome Number](https://leetcode.com/problems/palindrome-number)         | Math                | Math                           |
+| 10  | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | String | Dynamic Programming |
+| 11  | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Array | Two Pointers |
+| 12  | [Integer to Roman](https://leetcode.com/problems/integer-to-roman)           | Math                | String                         |
+| 13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer)           | Math                | String                         |
+| 14  | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | String              | String                         |
+| 15  | [3Sum](https://leetcode.com/problems/3sum)                                   | Array               | Two Pointers                   |
+| 16  | [3Sum Closest](https://leetcode.com/problems/3sum-closest)                   | Array               | Two Pointers                   |
+| 17  | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | String | Backtracking |
+| 18  | [4Sum](https://leetcode.com/problems/4sum)                                   | Array               | Two Pointers                   |
+| 19  | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Linked List | Two Pointers |
+| 20  | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)         | String              | Stack                          |
+| 21  | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Linked List         | Two Pointers                   |
+| 22  | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses)   | String              | Backtracking                   |
+| 23  | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)   | Linked List         | Divide and Conquer             |
+| 24  | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)     | Linked List         | Two Pointers                   |
+| 25  | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | Linked List | Two Pointers |
+| 26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Array | Two Pointers |
+| 27  | [Remove Element](https://leetcode.com/problems/remove-element)               | Array               | Two Pointers                   |
+| 28  | [Implement strStr()](https://leetcode.com/problems/implement-strstr)         | String              | Two Pointers                   |
+| 29  | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers)     | Math                | Bit Manipulation               |
+| 30  | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | String | Sliding Window |
+| 31  | [Next Permutation](https://leetcode.com/problems/next-permutation)           | Array               | Two Pointers                   |
+| 32  | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | String | Dynamic Programming |
+| 33  | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Array | Binary Search |
+| 34  | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Array | Binary Search |
+| 35  | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Array | Binary Search |
+| 36  | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku)                   | Array               | Hash Table                     |
+| 37  | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver)                 | Array               | Backtracking                   |
+| 38  | [Count and Say](https://leetcode.com/problems/count-and-say)                 | String              | Simulation                     |
+| 39  | [Combination Sum](https://leetcode.com/problems/combination-sum)             | Array               | Backtracking                   |
+| 40  | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii)       | Array               | Backtracking                   |
+| 41  | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Array | Hash Table |
+| 42  | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)     | Array               | Two Pointers                   |
+| 43  | [Multiply Strings](https://leetcode.com/problems/multiply-strings)           | String              | Math                           |
+| 44  | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching)         | String              | Dynamic Programming            |
+| 45  | [Jump Game II](https://leetcode.com/problems/jump-game-ii)                   | Array               | Greedy                         |
+| 46  | [Permutations](https://leetcode.com/problems/permutations)                   | Array               | Backtracking                   |
+| 47  | [Permutations II](https://leetcode.com/problems/permutations-ii)             | Array               | Backtracking                   |
+| 48  | [Rotate Image](https://leetcode.com/problems/rotate-image)                   | Array               | Two Pointers                   |
+| 49  | [Group Anagrams](https://leetcode.com/problems/group-anagrams)               | String              | Hash Table                     |
+| 50  | [Pow(x, n)](https://leetcode.com/problems/powx-n)                           | Math                | Recursion                      |
+| 51  | [N-Queens](https://leetcode.com/problems/n-queens)                           | Array               | Backtracking                   |
+| 52  | [N-Queens II](https://leetcode.com/problems/n-queens-ii)                     | Array               | Backtracking                   |
+| 53  | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)           | Array               | Dynamic Programming            |
+| 54  | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix)                 | Array               | Simulation                     |
+| 55  | [Jump Game](https://leetcode.com/problems/jump-game)                         | Array               | Greedy                         |
+| 56  | [Merge Intervals](https://leetcode.com/problems/merge-intervals)             | Array               | Sorting                        |
+| 57  | [Insert Interval](https://leetcode.com/problems/insert-interval)             | Array               | Sorting                        |
+| 58  | [Length of Last Word](https://leetcode.com/problems/length-of-last-word)     | String              | String                         |
+| 59  | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii)           | Array               | Simulation                     |
+| 60  | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence)   | Math                | Backtracking                   |
+| 61  | [Rotate List](https://leetcode.com/problems/rotate-list)                     | Linked List         | Two Pointers                   |
+| 62  | [Unique Paths](https://leetcode.com/problems/unique-paths)                   | Array               | Dynamic Programming            |
+| 63  | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii)             | Array               | Dynamic Programming            |
+| 64  | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum)           | Array               | Dynamic Programming            |
+| 65  | [Valid Number](https://leetcode.com/problems/valid-number)                   | String              | Simulation                     |
+| 66  | [Plus One](https://leetcode.com/problems/plus-one)                           | Array               | Math                           |
+| 67  | [Add Binary](https://leetcode.com/problems/add-binary)                       | String              | Math                           |
+| 68  | [Text Justification](https://leetcode.com/problems/text-justification)       | String              | Simulation                     |
+| 69  | [Sqrt(x)](https://leetcode.com/problems/sqrtx)                               | Math                | Binary Search                  |
+| 70  | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs)             | Math                | Dynamic Programming            |
+| 71  | [Simplify Path](https://leetcode.com/problems/simplify-path)                 | String              | Stack                          |
+| 72  | [Edit Distance](https://leetcode.com/problems/edit-distance)                 | String              | Dynamic Programming            |
+| 73  | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)         | Array               | Two Pointers                   |
+| 74  | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)       | Array               | Binary Search                  |
+| 75  | [Sort Colors](https://leetcode.com/problems/sort-colors)                     | Array               | Two Pointers                   |
+| 76  | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring) | String | Sliding Window |
+| 77  | [Combinations](https://leetcode.com/problems/combinations)                   | Array               | Backtracking                   |
+| 78  | [Subsets](https://leetcode.com/problems/subsets)                             | Array               | Backtracking                   |
+| 79  | [Word Search](https://leetcode.com/problems/word-search)                     | Array               | Backtracking                   |
+| 80  | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | Array | Two Pointers |
+| 81  | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | Array | Binary Search |
+| 82  | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Linked List | Two Pointers |
+| 83  | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Linked List | Two Pointers |
+| 84  | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram) | Array | Stack |
+| 85  | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle)         | Array               | Dynamic Programming            |
+| 86  | [Partition List](https://leetcode.com/problems/partition-list)               | Linked List         | Two Pointers                   |
+| 87  | [Scramble String](https://leetcode.com/problems/scramble-string)             | String              | Dynamic Programming            |
+| 88  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)       | Array               | Two Pointers                   |
+| 89  | [Gray Code](https://leetcode.com/problems/gray-code)                         | Math                | Backtracking                   |
+| 90  | [Subsets II](https://leetcode.com/problems/subsets-ii)                       | Array               | Backtracking                   |
+| 91  | [Decode Ways](https://leetcode.com/problems/decode-ways)                     | String              | Dynamic Programming            |
+| 92  | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Linked List | Two Pointers |
+| 93  | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses)   | String              | Backtracking                   |
+| 94  | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Tree | Recursion |
+| 95  | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) | Tree | Dynamic Programming |
+| 96  | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Tree | Dynamic Programming |
+| 97  | [Interleaving String](https://leetcode.com/problems/interleaving-string)     | String              | Dynamic Programming            |
+| 98  | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Tree | Recursion |
+| 99  | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree) | Tree | Recursion |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree)                         | Tree                | Recursion                      |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree)               | Tree                | Recursion                      |
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Tree | BFS |
+| 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | Tree | BFS |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Tree | Recursion |
+| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Tree | Recursion |
 
-| #  | Problem                                                                 | Category                |
-|----|-------------------------------------------------------------------------|-------------------------|
-| 1  | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | Arrays and Strings      |
-| 2  | [Rings and Rods](https://leetcode.com/problems/rings-and-rods/)         | Arrays and Strings      |
-| 3  | [Binary Search](https://leetcode.com/problems/binary-search/)           | Binary Search           |
-| 4  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked Lists            |
-| 5  | [Same Tree](https://leetcode.com/problems/same-tree/)                   | Trees                   |
-| 6  | [Number of Islands](https://leetcode.com/problems/number-of-islands/)   | Graphs                  |
-| 7  | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)     | Dynamic Programming     |
-| 8  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy                  |
-| 9  | [Subsets](https://leetcode.com/problems/subsets/)                       | Backtracking            |
-| 10 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)   | Stack and Queue         |
-| 11 | [Last Stone Weight](https://leetcode.com/problems/last-stone-weight/)   | Heap (Priority Queue)   |
-| 12 | [Single Number](https://leetcode.com/problems/single-number/)           | Bit Manipulation        |
-| 13 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)   | Math                    |
-| 14 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | Design                  |
-| 15 | [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) | Arrays and Strings      |
-| 16 | [Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii/) | Two Pointers            |
-| 17 | [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) | Sliding Window          |
-| 18 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Binary Search           |
-| 19 | [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | Linked Lists            |
-| 20 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Trees                   |
-| 21 | [All Paths from Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) | Graphs                  |
-| 22 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)       | Dynamic Programming     |
-| 23 | [Jump Game](https://leetcode.com/problems/jump-game/)                   | Greedy                  |
-| 24 | [Permutations](https://leetcode.com/problems/permutations/)             | Backtracking            |
-| 25 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | Stack and Queue         |
-| 26 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Heap (Priority Queue)   |
-| 27 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)     | Bit Manipulation        |
-| 28 | [Power of Two](https://leetcode.com/problems/power-of-two/)             | Math                    |
-| 29 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                   | Design                  |
-| 30 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Arrays and Strings      |
-| 31 | [Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) | Two Pointers            |
-| 32 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | Sliding Window          |
-| 33 | [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | Binary Search           |
-| 34 | [Merge Nodes in Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros/) | Linked Lists            |
-| 35 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Trees                   |
-| 36 | [Possible Bipartition](https://leetcode.com/problems/possible-bipartition/) | Graphs                  |
-| 37 | [House Robber](https://leetcode.com/problems/house-robber/)             | Dynamic Programming     |
-| 38 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Greedy                  |
-| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/)       | Backtracking            |
-| 40 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Stack and Queue         |
-| 41 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Heap (Priority Queue)   |
-| 42 | [Counting Bits](https://leetcode.com/problems/counting-bits/)           | Bit Manipulation        |
-| 43 | [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | Math                    |
-| 44 | [Design Twitter](https://leetcode.com/problems/design-twitter/)         | Design                  |
-| 45 | [Maximum Number of Pairs in Array](https://leetcode.com/problems/maximum-number-of-pairs-in-array/) | Arrays and Strings      |
-| 46 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | Two Pointers            |
-| 47 | [Longest Palindrome by Concatenating Two Letter Words](https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/) | Sliding Window          |
-| 48 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search           |
-| 49 | [Double a Number Represented as a Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list/) | Linked Lists            |
-| 50 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)         | Trees                   |
-| 51 | [Parallel Courses](https://leetcode.com/problems/parallel-courses/)     | Graphs                  |
-| 52 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Dynamic Programming     |
-| 53 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/)         | Greedy                  |
-| 54 | [N-Queens](https://leetcode.com/problems/n-queens/)                     | Backtracking            |
-| 55 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Stack and Queue         |
-| 56 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Heap (Priority Queue)   |
-| 57 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)             | Bit Manipulation        |
-| 58 | [Happy Number](https://leetcode.com/problems/happy-number/)             | Math                    |
-| 59 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Design                  |
-| 60 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | Arrays and Strings      |
-| 61 | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | Two Pointers            |
-| 62 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | Sliding Window          |
-| 63 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/) | Binary Search           |
-| 64 | [Sort Linked List Already Sorted Using Absolute Values](https://leetcode.com/problems/sort-linked-list-already-sorted-using-absolute-values/) | Linked Lists            |
-| 65 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Trees                   |
-| 66 | [Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/) | Graphs                  |
-| 67 | [Coin Change](https://leetcode.com/problems/coin-change/)               | Dynamic Programming     |
-| 68 | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | Greedy                  |
-| 69 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | Backtracking            |
-| 70 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | stack and queue        |
-| 71  | [Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) | Heap (Priority Queue)        |
-| 72  | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Bit Manipulation             |
-| 73  | [Count Primes](https://leetcode.com/problems/count-primes/)           | Math                         |
-| 74  | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | Design                       |
-| 75  | [Find Lucky Integer in an Array](https://leetcode.com/problems/find-lucky-integer-in-an-array/) | Arrays and Strings           |
-| 76  | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Two Pointers                 |
-| 77  | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Sliding Window               |
-| 78  | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Trees                        |
-| 79  | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | Dynamic Programming          |
-| 80  | [Edit Distance](https://leetcode.com/problems/edit-distance/)         | Dynamic Programming          |
-| 81  | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | Dynamic Programming          |
 
