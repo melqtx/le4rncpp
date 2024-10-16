@@ -39,28 +39,30 @@ public:
 // this is the best possible case, here were directly using the max function and using it.
 class Solution {
 public:
+    long long hourly(vector<int>& piles, int k) {
+        long long ht = 0;
+        for(int pile : piles){
+            ht += (pile + k - 1) / k;
+        }
+        return ht;
+    }
+
     int minEatingSpeed(vector<int>& piles, int h) {
-        ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-        long long l = 1, r = *max_element(begin(piles), end(piles));
-        long long least_k = r;
-        while (l <= r) {
-            const long long curr_k = (l + r) / 2;
-            long long curr_h = 0;
-            for (const auto &pile : piles) {
-                curr_h += (pile + curr_k - 1) / curr_k;
-            }
-            if (curr_h <= h) {
-                least_k = min(least_k, curr_k);
-                r = curr_k - 1;
-            } else {
-                l = curr_k + 1;
+        int low = 1;
+        int high = *max_element(begin(piles), end(piles));
+
+        while(low <= high){
+            int mid = low + (high - low) / 2;
+            long long totalh = hourly(piles, mid);
+            if(totalh <= h){ // increase the speed
+                high = mid-1;
+            }else{ // decrease the speed
+                low = mid + 1;
             }
         }
-        return least_k;
+        return low;
     }
-};
-
-// here we use long long as we get a signed integer overflow otherwise
+};// here we use long long as we get a signed integer overflow otherwise
 // we use l <= r as we are doing an exact value search
 // we want to include the case where l == r, and we know that this terminates, as both cases ignore the curr_k for the next iteration
 // we know we need an (n)logk alg as k can be between 10^9 and we want to find the optimal k in that range
