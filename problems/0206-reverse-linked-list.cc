@@ -31,6 +31,7 @@ public:
 
 // you may ask why stack? well it sotres value on Last in first out basis, which
 // matches here.
+// we couldve used recursive approach as well, but skill issues.
 class Solution {
 public:
   ListNode *reverseList(ListNode *first) {
