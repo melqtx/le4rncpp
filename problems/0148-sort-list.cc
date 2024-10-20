@@ -63,7 +63,7 @@ private:
             }
             curr = curr->next;
         }
-        
+        // left no crumbs uwuw:WQ
         if (l1) curr->next = l1;
         if (l2) curr->next = l2;
         
