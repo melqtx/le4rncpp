@@ -29,22 +29,23 @@ public:
 // its the dutch flag algorith bois.
 
 pretty simple
-
-    class Solution {
+class Solution {
 public:
-  void sortColors(vector<int> &nums) {
-    int l = 0, m = 0, h = static_cast<int>(nums.size()) - 1;
-    while (m <= h) {
-      if (nums[m] == 0) {
-        std::swap(nums[l], nums[m]);
-        ++l;
-        ++m;
-      } else if (nums[m] == 1) {
-        ++m;
-      } else {
-        std::swap(nums[m], nums[h]);
-        --h;
-      }
+    void sortColors(vector<int>& nums) {
+        int l = 0, mid = 0, h = nums.size()-1;
+        while(mid <= h){
+            if(nums[mid] == 0){
+                swap(nums[l], nums[mid]);
+                l++;
+                mid++;
+            }
+            else if(nums[mid] == 1){
+                mid++;
+            }
+            else{
+                swap(nums[mid], nums[h]);
+                h--;
+            }
+        }
     }
-  }
 };
