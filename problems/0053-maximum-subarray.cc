@@ -46,19 +46,18 @@ return max_so_far
 
 class Solution {
 public:
-  int maxSubArray(vector<int> &nums) {
-    int maxnow = INT_MIN;
-    int maxend = 0;
-    for (int i = 0; i < nums.size(); i++) {
-      maxend += nums[i];
-      if (maxnow < maxend) {
-        maxnow = maxend;
-      }
-      if (maxend < 0) {
-        maxend = 0;
-      }
-    }
-    return maxnow;
-  }
-};
+    int maxSubArray(vector<int>& nums) {
+        int maxi = INT_MIN;
+        int sum = 0;
+        for(int i = 0; i < nums.size(); i++){
+            sum+= nums[i];
 
+            if(sum > maxi) {
+                maxi = sum;
+            }
+
+            if(sum < 0) sum = 0;
+        }
+        return maxi;
+    }
+};
