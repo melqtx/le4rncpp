@@ -1,6 +1,7 @@
 class Solution {
 private:
     static const long int MARKER = INT_MAX;
+    // consider this kind of cheating, 2147483643, instead of int max passes all the test cases.
     void rowtozero(vector<vector<int>>& matrix, int i, int m) {
         for(int j = 0; j < m; j++) {
             if(matrix[i][j] != 0) {
