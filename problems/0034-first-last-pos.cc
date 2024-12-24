@@ -38,7 +38,6 @@ public:
     return ans;
   }
 };
-
 //here but it wouldve consudmed more memory.
 // here comes the bruteforce bitch
 class Solution {
