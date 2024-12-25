@@ -39,9 +39,6 @@ public:
   }
 };
 
-
-//we couldve directly used the lb and up function, 
-
 //here but it wouldve consudmed more memory.
 // here comes the bruteforce bitch
 class Solution {
