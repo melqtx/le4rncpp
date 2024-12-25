@@ -79,7 +79,7 @@ public:
                 h = m - 1;
             }
         }
-        
+        // find the second position
         if(ans[0] == -1) return ans;  // Target not found
         l = ans[0]; 
         h = nums.size() - 1;
