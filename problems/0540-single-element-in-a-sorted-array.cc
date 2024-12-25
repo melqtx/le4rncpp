@@ -25,4 +25,15 @@ public:
     }
 };
 
+//why use a hashmap when you can xor; idk if this rhymed well man
 
+class Solution {
+public:
+    int singleNonDuplicate(vector<int>& nums) {
+        int num = 0;
+        for(int i = 0; i < nums.size(); i++){
+            num ^= nums[i];
+        }
+        return num;
+    }
+};
