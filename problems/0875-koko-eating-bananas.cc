@@ -1,7 +1,8 @@
 //first approach is this.
 class Solution {
 public:
-    int findMax(const vector<int>& piles) {
+  //always write a function yourself  
+  int findMax(const vector<int>& piles) {
         int maxBananas = INT_MIN;
         for (int pile : piles) {
             maxBananas = max(maxBananas, pile);
