@@ -41,8 +41,8 @@ public:
         }
         return a;
     }
-           
-
+                    
+                    
     int smallestDivisor(vector<int>& nums, int threshold) {
          ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
         int low = 1;
