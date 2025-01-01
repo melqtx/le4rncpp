@@ -24,3 +24,19 @@ public:
     }
 }; 
 // well this couldve been much better tbh.
+// found this while looking for a better approach
+class Solution {
+public:
+    int maxScore(string s) {
+        int n = s.length();
+        int maxScore = 0;
+        
+        for (int i = 1; i < n; i++) {
+            int leftZeros = count(s.begin(), s.begin() + i, '0');
+            int rightOnes = count(s.begin() + i, s.end(), '1');
+            maxScore = max(maxScore, leftZeros + rightOnes);
+        }
+        
+        return maxScore;
+    }
+};
