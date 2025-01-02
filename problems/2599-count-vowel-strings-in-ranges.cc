@@ -40,3 +40,30 @@ public:
 };
 
 // would you believe me this fails just one test case, aaaaaaaaaaaaa fuck me
+// neetcode to the rescue
+
+class Solution {
+public:
+    bool isVowel(char c) {
+        return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    }
+    vector<int> vowelStrings(vector<string>& words, vector<vector<int>>& queries) {
+        vector<int> prefixCount(words.size() + 1, 0);
+        for(int i = 0; i < words.size(); i++) {
+            prefixCount[i + 1] = prefixCount[i];
+            if(isVowel(words[i][0]) && isVowel(words[i].back())) {
+                prefixCount[i + 1]++;
+            }
+        }
+        vector<int> answer;
+        for(const vector<int>& query : queries) {
+            int start = query[0];
+            int end = query[1];
+            int countInRange = prefixCount[end + 1] - prefixCount[start];
+            answer.push_back(countInRange);
+        }
+        return answer;
+    }
+};
+
+//this shit works, we couldve used a set of vowels as well, i wanna keep things simple
