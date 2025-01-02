@@ -33,3 +33,5 @@ public:
     return low;
 }
 };
+
+// good one tbh, they follow the same pattern
