@@ -29,7 +29,6 @@ public:
 };
 
 // this doesnt even pass all the testcases, but if it works it works.
-
 /*
     max_so_far = INT_MIN
     max_ending_here = 0
