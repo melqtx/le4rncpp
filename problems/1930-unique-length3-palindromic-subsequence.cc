@@ -29,4 +29,7 @@ string pal;
 pal = pal + c;
 pal = pal + m;
 and then insert pal into result
+
+
+time: 36 mins
 */
