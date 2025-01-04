@@ -79,5 +79,5 @@ so now just chip in the fourmula for more;
 arr[high] + k - missing
 arr[high] + k - (arr[high] - high - 1)
 it cancels
-were left with high + k + 1;
+were left with high + k + 1; or low + 1
 */
