@@ -1,3 +1,6 @@
+// just transpose the matrix and put the fries in the bag bro;
+// transpose ----------->  reverse
+
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
