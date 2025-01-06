@@ -1,6 +1,7 @@
 // just transpose the matrix and put the fries in the bag bro;
 // transpose ----------->  reverse
-
+// another thing to be observed, 
+// diagonal elements remains, same, and other elements are just swapping the places.
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
