@@ -40,3 +40,7 @@ public:
         return vector<int>(result.begin(), result.end());
     }
 };
+
+// son of a bitch, this is n^2 fuck
+// a better Solution can be using a hashmap which we used in maj element 1
+// other one was moores algorithm
