@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool canBeValid(string s, string locked) {
-        if(s.length() % 2 != 0) return false;
+        if(s.length() % 2 != 0) return false; // every open parenthesis needs a closing one
         stack<int> st;
         for(int i = 0; i < s.length(); i++) {
             if(locked[i] == '1' && s[i] == ')') {
