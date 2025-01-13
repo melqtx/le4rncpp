@@ -21,3 +21,7 @@ public:
         return tlen;
     }
 };
+
+// space complexity O(1)
+// time complexity O(n)
+// man this got poor time complexity
