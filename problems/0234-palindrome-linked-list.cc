@@ -26,18 +26,18 @@ public:
         return true;
     }
 };
-
-
-
 class Solution {
 public:
+    // the basic approach we are gonna use is
+    // find the middle, reverse from there, then comparte both the halves.
+
     ListNode* reverse(ListNode* head) {
         ListNode* p = head;
         ListNode* q = nullptr;
-        ListNode *r = nullptr;
-        while(p){
+        ListNode* r = nullptr;
+        while(p) {
             r = q;
-            q = p; 
+            q = p;
             p = p->next;
             q->next = r;
         }
@@ -46,30 +46,27 @@ public:
     }
 
 
-    bool isPalindrome(ListNode* head) {
-        if (head == nullptr || head->next == nullptr)
-            return true;
 
-        // Find the end of first half and reverse second half
-        ListNode* slow = head;
+
+    bool isPalindrome(ListNode* head) {
+        // base case
+        if(head == nullptr && head->next == nullptr) return true;
         ListNode* fast = head;
-        while (fast->next != nullptr && fast->next->next != nullptr) {
+        ListNode* slow = head;
+        while(fast->next!= nullptr && fast->next->next != nullptr) {
             slow = slow->next;
             fast = fast->next->next;
         }
-
-        ListNode* secondHalf = reverse(slow->next);
-        ListNode* firstHalf = head;
-
-        // Compare the two halves
-        while (secondHalf != nullptr) {
-            if (firstHalf->val != secondHalf->val)
-                return false;
-            firstHalf = firstHalf->next;
-            secondHalf = secondHalf->next;
+        ListNode* half2 = reverse(slow->next);
+        ListNode* half1 = head;
+        while(half2 != nullptr){
+            if(half1->val != half2->val) return false;
+            half1 = half1->next;
+            half2 = half2->next;
         }
         slow->next = reverse(slow->next);
-
         return true;
+
     }
 };
+
