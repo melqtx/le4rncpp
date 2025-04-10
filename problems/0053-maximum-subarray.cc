@@ -58,3 +58,21 @@ public:
         return maxi;
     }
 };
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        ios::sync_with_stdio(0);
+        cin.tie(0);
+        int sum = nums[0];
+        int best = nums[0];
+        for(int i = 1; i < nums.size(); i++) {
+            sum = max(nums[i], sum + nums[i]);
+            best = max(sum,best);
+        }
+        return best;
+    }
+};
+
+// why did i not think of this approach before hand?
+// im a retard tbh
